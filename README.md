@@ -178,6 +178,17 @@ python ablation_report.py
 
 ---
 
+## 📊 复现数据（Reproducibility Data）
+
+基准测试与消融实验的原始结果 + 配套复现附录已发布至 Zenodo：
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21471538.svg)](https://doi.org/10.5281/zenodo.21471538)
+
+- 内容：330 个消融 run（19 配置 × 3 领域 × 5 run）+ 9 基准题 / 3 GT 题（各 5 run）的结果 JSON，及算法 / 超参 / 复现说明附录。
+- 数据集 DOI：https://doi.org/10.5281/zenodo.21471538
+
+---
+
 ## 📄 许可证
 
 本项目基于 [MIT License](LICENSE) 开源。
