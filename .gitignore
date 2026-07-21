@@ -1,0 +1,46 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Environment & secrets
+.env
+*.env
+
+# Experiment result data (large, contains sensitive results)
+ablation_formal/
+benchmark_results/
+saved_code/
+temp_code/
+
+# IDE & editor
+.qoder/
+.vscode/
+.idea/
+*.code-workspace
+
+# Paper & documents (generated outputs)
+docs/
+附录/
+
+# Gradio certificate
+.gradio/
+
+# Demo result JSONs (generated outputs)
+Demo/demo_*.json
+
+# Logs & temporary files
+*.log
+*.err
+*.txt
+nul
+py_procs.txt
+_targeted_runner_resume.*
+
+# Skill vector database (runtime generated, large)
+saved_code/skill_vectordb/
+
+# OS files
+.DS_Store
+Thumbs.db
