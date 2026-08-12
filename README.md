@@ -16,7 +16,6 @@
 - 📈 **RL 假设演化**：Thompson Sampling / UCB1 多臂老虎机指导假设优化
 - 📚 **文献挖掘**：通过 Tavily 检索为假设与新颖性判断提供外部证据
 - 🧰 **技能库**：向量数据库存储可复用实验技能，支持跨领域迁移与元学习
-- 📊 **基准与消融**：内置 benchmark 与 ablation 实验脚本，便于复现与评估
 
 ---
 
@@ -47,13 +46,8 @@ Discovery-Agent/
 ├── skill_store/                # 技能向量库（embeddings / retrieval / vector_db / meta_learning）
 ├── mcp_servers_and_tools/
 │   └── direct_tools/           # search_tool（Tavily 检索）、memory_tools（记忆）
-├── benchmarks/                 # 基准测试（runner / visualize / gt_judge）
 ├── Demo/                       # 演示应用与示例数据
 ├── tests/                      # 单元测试
-├── ablation_runner.py          # 消融实验运行器
-├── ablation_metrics.py         # 消融指标计算
-├── ablation_report.py          # 消融报告生成
-├── compute_ablation_stats.py   # 消融统计分析
 ├── requirements.txt            # 依赖清单
 └── .env.example                # 环境变量模板
 ```
@@ -158,20 +152,6 @@ python demo.py
 
 ---
 
-## 🧪 基准与消融实验
-
-```bash
-# 运行基准测试
-python benchmarks/benchmark_runner.py
-
-# 运行消融实验并生成报告
-python ablation_runner.py
-python compute_ablation_stats.py
-python ablation_report.py
-```
-
----
-
 ## 🧩 主要依赖
 
 `openai` / `openai-agents`（多智能体编排）、`pydantic`（数据校验）、`numpy` / `scipy` / `pandas`（科学计算）、`chromadb`（技能向量库）、`tavily-python`（文献检索）、`matplotlib` / `seaborn`（可视化）、`networkx` / `scikit-learn`（因果与相似度）、`gradio`（Web UI）。完整版本见 [`requirements.txt`](requirements.txt)。
@@ -182,10 +162,10 @@ python ablation_report.py
 
 基准测试与消融实验的原始结果 + 配套复现附录已发布至 Zenodo：
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21471538.svg)](https://doi.org/10.5281/zenodo.21471538)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21906104.svg)](https://doi.org/10.5281/zenodo.21906104)
 
 - 内容：330 个消融 run（19 配置 × 3 领域 × 5 run）+ 9 基准题 / 3 GT 题（各 5 run）的结果 JSON，及算法 / 超参 / 复现说明附录。
-- 数据集 DOI：https://doi.org/10.5281/zenodo.21471538
+- 数据集 DOI：https://doi.org/10.5281/zenodo.21906104
 
 ---
 
