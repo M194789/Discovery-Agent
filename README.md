@@ -160,12 +160,12 @@ python demo.py
 
 ## 📊 复现数据（Reproducibility Data）
 
-基准测试与消融实验的原始结果 + 配套复现附录已发布至 Zenodo：
+基准测试、消融实验与对比实验的运行记录和跨模型评估结果已发布至 Zenodo：
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21906104.svg)](https://doi.org/10.5281/zenodo.21906104)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23254281.svg)](https://doi.org/10.5281/zenodo.23254281)
 
-- 内容：330 个消融 run（19 配置 × 3 领域 × 5 run）+ 9 基准题 / 3 GT 题（各 5 run）的结果 JSON，及算法 / 超参 / 复现说明附录。
-- 数据集 DOI：https://doi.org/10.5281/zenodo.21906104
+- 内容：CASCADE 与 SciAgents 对比记录、15 种消融变体及 FULL 配置的运行记录、跨领域基准测试与 GT 实验记录，以及 Qwen / GLM 跨模型评估记录。归档结构与记录说明见压缩包内的 README。
+- 数据集 DOI：https://doi.org/10.5281/zenodo.23254281
 
 ---
 
